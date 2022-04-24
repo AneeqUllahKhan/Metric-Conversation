@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  background-color: #162239f2;
+  font-family: 16px sans-serif;
+  color: #212529;
+}
+.nav-item a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 14px;
+}
+.nav-item a:hover{
+  margin-left: 5px;
+  margin-right: 5px;
+  border-top: 2px solid #f5a425;
+  border-left: 2px solid #f5a425;
+  border-right: 2px solid #f5a425;
+  border-bottom: 2px solid #f5a425;
+}
+.nav-item a.active {
+  border-top: 2px solid #f5a425;
+  border-left: 2px solid #f5a425;
+  border-right: 2px solid #f5a425;
+  border-bottom: 2px solid #f5a425;
+}
+.dropdown-menu{
+  background-color: #162239f2;
+  opacity: 0.90;
+}
+section{
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+section .container {
+  position: relative;
+  z-index: 2;
+}
+section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.form-control:hover{
+  border-top: 2px solid #f5a425;
+  border-left: 2px solid #f5a425;
+  border-right: 2px solid #f5a425;
+  border-bottom: 2px solid #f5a425;
+}
+#center{
+  margin-left: 300px;
+}
+.rounded{
+  background-color: #162239f2;
+  color: #f5a425;
+}
+.col-6 a{
+  text-decoration: none;
+  color: #f5a425;
+}
+.rounded:hover{
+  background-color: #f5a425;
+  color: #162239f2;
+}
+@media screen and (max-width: 767px) {  
+  #size1 {
+      width: 100%;
+     
+  }
+  .col-md-6 {
+  padding-left: 20px;
+}
+  }
+
+  /* .d5{
+    float: right;
+    display: inline;
+  } */
+.hov{
+  position: relative;
+  color: #f5a425;
+}
+.hov::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f5a425;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hov:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
